@@ -270,148 +270,167 @@
 <!-- PROJECTS -->
 <section id="projects">
   <div class="container">
-
     <div class="sh reveal">
       <span class="sl">02.</span>
       <h2 class="st">Projets</h2>
       <div class="sline"></div>
     </div>
-
     <div class="filter-bar reveal">
       <button class="fbtn active" data-filter="all">Tous</button>
       <button class="fbtn" data-filter="de">Data Engineering</button>
       <button class="fbtn" data-filter="bi">BI & Visualisation</button>
-      <button class="fbtn" data-filter="ml">ML / IA</button>
+      <button class="fbtn" data-filter="ml">ML / Stats</button>
+      <button class="fbtn" data-filter="cl">Cloud & Infra</button>
     </div>
-
     <div class="pgrid" id="pgrid">
 
-      <!-- 1 -->
-      <div class="pc" data-category="ml">
+      <div class="pc" data-category="de" style="animation-delay:.05s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/Scoring_de_pays_expansion" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">⚡</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">Analyse systèmes éducatifs</h3>
-        <p class="pdesc">Scoring de pays basé sur indicateurs économiques et éducatifs.</p>
-        <div class="ptags">
-          <span class="tag tm">Python</span><span class="tag tm">Pandas</span><span class="tag tm">Jupyter</span>
-        </div>
+        <h3 class="ptitle">Pipeline ETL Transition Écologique — MEL</h3>
+        <p class="pdesc">Architecture end-to-end pour la Métropole de Lille. Ingestion multi-sources (capteurs d'air, open data, factures), modélisation Star Schema GES, orchestration Kestra.</p>
+        <div class="ptags"><span class="tag td">Python</span><span class="tag td">Kestra</span><span class="tag td">dbt</span><span class="tag td">PostgreSQL</span><span class="tag tc">Docker</span></div>
       </div>
 
-      <!-- 2 -->
-      <div class="pc" data-category="de">
+      <div class="pc" data-category="bi" style="animation-delay:.1s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/SQL-database-creation" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">🏙️</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">Base SQL immobilier</h3>
-        <p class="pdesc">Modélisation de base de données et requêtes SQL avancées.</p>
-        <div class="ptags">
-          <span class="tag td">SQL</span><span class="tag td">MySQL</span>
-        </div>
+        <h3 class="ptitle">Dashboards KPIs Décarbonation — ADEME</h3>
+        <p class="pdesc">Tableaux de bord Power BI & Qlik Sense pour le pilotage politique de la MEL. KPIs décarbonation ayant conduit au label ADEME "Climat Air Énergie" — score 80,2%.</p>
+        <div class="ptags"><span class="tag tb">Power BI</span><span class="tag tb">Qlik Sense</span><span class="tag td">SQL</span></div>
       </div>
 
-      <!-- 3 -->
-      <div class="pc" data-category="de">
+      <div class="pc" data-category="bi" style="animation-delay:.15s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/Migration-NoSQL-data-" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">🗺️</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">Migration NoSQL + API sécurisée</h3>
-        <p class="pdesc">API REST avec MongoDB, JWT et Docker.</p>
-        <div class="ptags">
-          <span class="tag td">MongoDB</span><span class="tag td">FastAPI</span><span class="tag tc">Docker</span>
-        </div>
+        <h3 class="ptitle">Référentiel Analytics — Métropole de Lyon</h3>
+        <p class="pdesc">Plateforme partagée pour 5 directions. 30+ KPIs définis, rapports automatisés Power BI / Tableau réduisant les délais de reporting trimestriel pour les décideurs.</p>
+        <div class="ptags"><span class="tag tb">Tableau</span><span class="tag tb">Power BI</span><span class="tag td">SQL</span><span class="tag td">Excel Avancé</span></div>
       </div>
 
-      <!-- 4 -->
-      <div class="pc" data-category="ml">
+      <div class="pc" data-category="de" style="animation-delay:.2s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/Modele-ML-avec-BentoML-Docker-et-GCP" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">🏗️</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">ML énergie bâtiments</h3>
-        <p class="pdesc">Prédiction consommation énergétique avec déploiement cloud.</p>
-        <div class="ptags">
-          <span class="tag tm">Scikit-learn</span><span class="tag tm">XGBoost</span><span class="tag tc">GCP</span>
-        </div>
+        <h3 class="ptitle">Data Warehouse Star Schema GES — dbt</h3>
+        <p class="pdesc">Entrepôt de données dimensionnel pour le suivi des émissions. Modélisation dbt Cloud, tests de qualité automatiques et documentation générée du lineage des données.</p>
+        <div class="ptags"><span class="tag td">dbt Cloud</span><span class="tag td">PostgreSQL</span><span class="tag td">Star Schema</span></div>
       </div>
 
-      <!-- 5 -->
-      <div class="pc" data-category="de">
+      <div class="pc" data-category="cl" style="animation-delay:.25s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/Mise-en-place-infrastructure-de-donnees-meteorologiques" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">🐳</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">Infra data météo</h3>
-        <p class="pdesc">Pipeline complet cloud de données météo.</p>
-        <div class="ptags">
-          <span class="tag td">AWS</span><span class="tag td">S3</span><span class="tag tc">Docker</span>
-        </div>
+        <h3 class="ptitle">Infrastructure Docker / Kubernetes Data Platform</h3>
+        <p class="pdesc">Containerisation complète d'un stack Data Engineering. Services orchestrés Kubernetes pour garantir scalabilité, résilience et déploiement reproductible des pipelines.</p>
+        <div class="ptags"><span class="tag tc">Docker</span><span class="tag tc">Kubernetes</span><span class="tag tc">AWS</span><span class="tag td">Python</span></div>
       </div>
 
-      <!-- 6 -->
-      <div class="pc" data-category="de">
+      <div class="pc" data-category="de" style="animation-delay:.3s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/Mise-en-place-d-une-infrastructure-dans-le-cloud-" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">🌊</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">Streaming temps réel</h3>
-        <p class="pdesc">ETL streaming avec PySpark et Redpanda.</p>
-        <div class="ptags">
-          <span class="tag td">PySpark</span><span class="tag td">Kafka</span>
-        </div>
+        <h3 class="ptitle">Streaming temps réel — Kafka / Redpanda</h3>
+        <p class="pdesc">Pipeline event-driven pour l'ingestion temps réel de données capteurs. Consumers Python, transformation PySpark et stockage dans Data Warehouse PostgreSQL.</p>
+        <div class="ptags"><span class="tag tv" style="background:rgba(94,234,212,.07);color:var(--a1)">Kafka</span><span class="tag td">Redpanda</span><span class="tag td">PySpark</span><span class="tag td">Python</span></div>
       </div>
 
-      <!-- 7 -->
-      <div class="pc" data-category="de">
+      <div class="pc" data-category="ml" style="animation-delay:.35s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/Pipeline-orchestration-de-Flux-kestra" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">📉</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">Orchestration Kestra</h3>
-        <p class="pdesc">Automatisation pipeline data avec scheduling.</p>
-        <div class="ptags">
-          <span class="tag td">Kestra</span><span class="tag td">DuckDB</span>
-        </div>
+        <h3 class="ptitle">Modèles de risques financiers — COOPECFI</h3>
+        <p class="pdesc">Scoring de portefeuilles bancaires et détection d'anomalies avec scikit-learn et R. Tableaux de bord décisionnels pour la direction sur données transactionnelles.</p>
+        <div class="ptags"><span class="tag tm">Scikit-learn</span><span class="tag tm">R</span><span class="tag tm">SAS</span><span class="tag tb">Looker Studio</span></div>
       </div>
 
-      <!-- 8 -->
-      <div class="pc" data-category="ml">
+      <div class="pc" data-category="ml" style="animation-delay:.4s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/RAG-Chatbot-Data-Engineering" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">📊</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">RAG Chatbot ⭐</h3>
-        <p class="pdesc">Chatbot IA avec recherche sémantique (LangChain + FAISS).</p>
-        <div class="ptags">
-          <span class="tag tm">LangChain</span><span class="tag tm">FAISS</span><span class="tag tm">Mistral</span>
-        </div>
+        <h3 class="ptitle">Modèles économétriques & analyse statistique</h3>
+        <p class="pdesc">Régression, séries temporelles et analyse de variance sur données macroéconomiques. Issu de ma formation en économétrie quantitative (Caen & Lomé) et du Mastère IA.</p>
+        <div class="ptags"><span class="tag tm">Python</span><span class="tag tm">R</span><span class="tag tm">DuckDB</span><span class="tag tm">SAS</span></div>
       </div>
 
-      <!-- 9 -->
-      <div class="pc" data-category="de">
+      <div class="pc" data-category="cl" style="animation-delay:.45s">
         <div class="ptop">
-          <div class="plinks">
-            <a href="https://github.com/LIDONI/Architecture-de-donneess-automatisee" target="_blank" class="plink">GitHub</a>
-          </div>
+          <div class="picon">☁️</div>
+          <div class="plinks"><a href="https://github.com/khalidouroadoyi" target="_blank" class="plink" title="GitHub"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
         </div>
-        <h3 class="ptitle">Infra Data Platform complète</h3>
-        <p class="pdesc">Pipeline end-to-end + dashboards Power BI + analyse business.</p>
-        <div class="ptags">
-          <span class="tag td">Kafka</span><span class="tag td">PostgreSQL</span><span class="tag tb">Power BI</span>
-        </div>
+        <h3 class="ptitle">Pipeline Cloud multi-sources — AWS / GCP</h3>
+        <p class="pdesc">Ingestion et transformation de données hétérogènes via REST API sur infrastructure cloud hybride. Data Lake, monitoring des flux et reporting opérationnel en temps réel.</p>
+        <div class="ptags"><span class="tag tc">AWS</span><span class="tag tc">GCP</span><span class="tag tc">Azure</span><span class="tag td">REST API</span><span class="tag td">MongoDB</span></div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="sh reveal">
+      <span class="sl">03.</span>
+      <h2 class="st">Profil</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="agrid">
+      <div class="atxt reveal">
+        <p>Data Engineer & Analytics Engineer avec une double compétence en ingénierie des données et analyse statistique avancée. Maîtrise de Python, SQL et dbt pour transformer des données brutes en solutions analytiques industrialisées et reproductibles.</p>
+        <p>Expérience concrète en collectivités territoriales (MEL, Métropole de Lyon) sur des projets à fort impact public : pilotage de la transition écologique, harmonisation de la performance inter-directions, restitution aux élus.</p>
+        <p>Formation en économétrie et Intelligence Artificielle. Rigoureux, autonome, orienté impact business. Disponible pour un poste à Paris (75017) ou en remote.</p>
+        <div style="margin-top:1.4rem;display:flex;gap:.65rem;flex-wrap:wrap">
+          <a href="OURO_Khalid_CV_AnalyticsEngineer.pdf" target="_blank" class="btn btn-g" style="font-size:.7rem">📄 CV Analytics Engineer</a>
+          <a href="https://linkedin.com/in/khalidouroadoyi" target="_blank" class="btn btn-g" style="font-size:.7rem">in LinkedIn</a>
+          <a href="https://github.com/khalidouroadoyi" target="_blank" class="btn btn-g" style="font-size:.7rem">⌥ GitHub</a>
+        </div>
+        <div class="flist">
+          <div class="fitem">
+            <div class="fyear">2024→26</div>
+            <div><div class="fname">Certificat Data Engineering</div><div class="fschool">OpenClassrooms — Pipelines de données & Cloud</div></div>
+          </div>
+          <div class="fitem">
+            <div class="fyear">2022→24</div>
+            <div><div class="fname">Mastère Intelligence Artificielle (Data)</div><div class="fschool">IA School — ML, modèles prédictifs</div></div>
+          </div>
+          <div class="fitem">
+            <div class="fyear">2021</div>
+            <div><div class="fname">Licence Économétrie & Économie Quantitative</div><div class="fschool">Universités de Caen & Lomé</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="sgrid">
+          <div class="scard"><div class="snum">9+</div><div class="slbl">projets data</div></div>
+          <div class="scard"><div class="snum">30+</div><div class="slbl">KPIs définis</div></div>
+          <div class="scard"><div class="snum">80.2%</div><div class="slbl">score ADEME</div></div>
+          <div class="scard"><div class="snum">5</div><div class="slbl">directions pilotées</div></div>
+        </div>
+        <div style="margin-top:.85rem">
+          <div class="scard" style="border-left:2px solid var(--a1)">
+            <div style="font-family:var(--mono);font-size:.62rem;color:var(--mu);margin-bottom:.5rem;letter-spacing:.05em">LANGUES</div>
+            <div style="display:flex;gap:.45rem;flex-wrap:wrap"><span class="pill p-t">🇫🇷 Français natif</span><span class="pill p-b">🇬🇧 Anglais B2</span></div>
+          </div>
+        </div>
+        <div style="margin-top:.85rem">
+          <div class="scard">
+            <div style="font-family:var(--mono);font-size:.62rem;color:var(--mu);margin-bottom:.5rem;letter-spacing:.05em">MÉTHODES & OUTILS</div>
+            <div style="display:flex;gap:.45rem;flex-wrap:wrap"><span class="pill p-a">Agile/Scrum</span><span class="pill p-a">Jira</span><span class="pill p-v">Ateliers MOA</span><span class="pill p-v">Git/GitHub</span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -472,3 +491,4 @@ document.querySelectorAll('.fbtn').forEach(btn=>{
 </script>
 </body>
 </html>
+
